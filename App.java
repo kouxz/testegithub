@@ -9,7 +9,7 @@ public class App {
 
        // Programa para ver a altura média e mostrar a porcentagem de pessoas menores de 15 anos
 
-        System.out.print("Quantas pessoas serao digitadas? ");
+        System.out.print("Quantas pessoas serão digitadas? ");
         int n = scn.nextInt();
 
         String[] nomes = new String[n];
@@ -37,16 +37,16 @@ public class App {
 
         int cont = 0;
         for(int i = 0; i < n; i++) {
-            if (idades[i] < 15) {
+            if (idades[i] < 16) {
                 cont = cont + 1;
             }
         }
 
         double percent = cont * 100.0 / n;
-        System.out.printf("Pessoas com menos de 15 anos: %.1f%%%n", percent);
+        System.out.printf("Pessoas com menos de 16 anos: %.1f%%%n", percent);
         
         for(int i = 0; i < n; i++) {
-            if (idades[i] < 15) {
+            if (idades[i] < 16) {
                System.out.println(nomes[i]); 
             }
         }
